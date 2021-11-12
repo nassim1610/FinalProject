@@ -44,7 +44,7 @@ public class CommonAPI {
             if (OS.equalsIgnoreCase("OS X")) {
                 System.setProperty("webdriver.chrome.driver", "../Generic/drivers/chromedriver");
             } else if (OS.equalsIgnoreCase("Windows")) {
-                System.setProperty("webdriver.chrome.driver", "../Generic/drivers/chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "C:\\Users\\nassi\\IdeaProjects\\FinalProject\\Generic\\driver\\chromedriver.exe");
             }
             driver = new ChromeDriver();
         } else if (browserName.equalsIgnoreCase("firefox")) {
@@ -80,7 +80,7 @@ public class CommonAPI {
         }
         return driver;
     }
-    @AfterMethod
+//////    @AfterMethod
     public void afterMethod () {
         driver.quit();
     }
