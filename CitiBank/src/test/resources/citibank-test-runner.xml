@@ -12,9 +12,9 @@
 <parameter name="url" value="https://www.citi.com"/>
 <test name = "smoke testing CityBank search">
     <classes>
-        <!--<class name="test.HomeTest"/>-->
-<!--        <class name="test.TestRgistrationForOnlineAccess"/>-->
+
         <class name="test.Testt"/>
+<!--        <class name="test.Testt"/>-->
     </classes>
 </test>
 

@@ -8,32 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import java.lang.reflect.Field;
 
 
-public class RegisterForOnlineAccess extends CommonAPI {
-
-
-//    @FindBy(css="#navbankingmainAnchor1")
-//    WebElement getCreditCard;
-//    @FindBy(css= "#CheckingchildLink0")
-//    WebElement checking;
-//
-//    public WebElement getGetCreditCard() {
-//        return getCreditCard;
-//    }
-//    public WebElement getChecking() {
-//        return checking;
-//    }
-//
-//    public void hoverOverCreditCards(){
-//        mouseHoverByCSS("getCreditCard");
-//    }
-//    public void clickOnChecking(){
-//        clickOn(getChecking());
-//    }
-//
-//}
-
-
-
+public class GetHelp extends CommonAPI {
 
     @FindBy(xpath = "//*[@id='personetics-citi-menu']")
     WebElement howCanWeHelp;
@@ -84,18 +59,26 @@ public class RegisterForOnlineAccess extends CommonAPI {
         return clickOnEarnUpTO1500;
     }
     //==============================
-    public void helpIcon() throws InterruptedException {
+    public void helpIcon()  {
         clickOn(getHowCanWeHelp());
-        Thread.sleep(3000);
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 //    public void input1(String str) throws InterruptedException {
 //        typeEnter(getLookFor(),str);
 //        Thread.sleep(2000);
 //    }
-   public void input1(String str) throws InterruptedException {
+   public void input1(String str)  {
         typeEnter(getLookFor(),str);
-        Thread.sleep(2000);
-    }
+       try {
+           Thread.sleep(2000);
+       } catch (InterruptedException e) {   
+           e.printStackTrace();
+       }
+   }
 //            public void inputTry(String input){
 //        typeAndEnter("getLookFor()", input);
 //            }

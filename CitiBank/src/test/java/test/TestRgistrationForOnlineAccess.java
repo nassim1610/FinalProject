@@ -1,44 +1,37 @@
 package test;
 
 import base.CommonAPI;
-import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Optional;
 import org.testng.annotations.Test;
-import pages.RegisterForOnlineAccess;
-
-import javax.imageio.spi.RegisterableService;
-import java.io.IOException;
-import java.util.concurrent.TimeUnit;
+import pages.CreditCardsOption;
+import pages.GetHelp;
 
 
 public class TestRgistrationForOnlineAccess extends CommonAPI {
 
-//
-//@Test
-//    public void tryCreditCards() throws InterruptedException {
-//    Thread.sleep(9000);
-//    RegisterForOnlineAccess reg = PageFactory.initElements(driver, RegisterForOnlineAccess.class);
-//    reg.hoverOverCreditCards();
-//    Thread.sleep(3000);
-//    reg.clickOnChecking();
-//    Thread.sleep(3000);
-//}
+
+@Test
+    public void tryCreditCards() throws InterruptedException {
+    Thread.sleep(9000);
+    GetHelp reg = PageFactory.initElements(driver, GetHelp.class);
+
+}
 
     @Test
     public void tryLowIntro () throws InterruptedException {
-        RegisterForOnlineAccess reg= PageFactory.initElements(driver, RegisterForOnlineAccess.class);
+        GetHelp reg= PageFactory.initElements(driver, GetHelp.class);
         reg.helpIcon();
         reg.input1("open account");
 
        Thread.sleep(3000);
-//        reg.clickOnHowToReopenAccount();
-//        reg.clickOnApplyForCitiBAccount();
-//        reg.scrolToSpecialOffers(driver);
-
-
     }
 
+    @Test
+    public void test(){
+        CreditCardsOption reg= PageFactory.initElements(driver, CreditCardsOption.class) ;
+
+//        reg.hoverOverCreditCards();
+        reg.hoverOverCreditCards(driver);
+    }
 
 }

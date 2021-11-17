@@ -3,8 +3,7 @@ package pages;
 import base.CommonAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.testng.annotations.Test;
-import pages.RegisterForOnlineAccess;
+
 public class Sendkeys extends CommonAPI {
 
 
