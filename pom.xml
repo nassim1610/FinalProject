@@ -15,6 +15,7 @@
       <module>Netflix</module>
       <module>Amazon</module>
     <module>Facebook</module>
+      <module>BestBuy</module>
 
   </modules>
 

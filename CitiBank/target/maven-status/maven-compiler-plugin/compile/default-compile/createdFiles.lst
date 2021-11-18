@@ -1,1 +1,3 @@
-pages\RegisterForOnlineAccess.class
+pages\Sendkeys.class
+pages\CreditCardsOption.class
+pages\GetHelp.class

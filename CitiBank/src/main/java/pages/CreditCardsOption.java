@@ -4,7 +4,6 @@ import base.CommonAPI;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.testng.annotations.Test;
 
 public class CreditCardsOption extends CommonAPI {
 
@@ -15,13 +14,13 @@ public class CreditCardsOption extends CommonAPI {
         return creditCards;
     }
 
-
     public void hoverOverCreditCards(){
         hoverOver(driver, getCreditCards());
    }
     public void hoverOverCreditCards(WebDriver driver){
         hoverOver(driver, getCreditCards());
     }
+
 
 
 }

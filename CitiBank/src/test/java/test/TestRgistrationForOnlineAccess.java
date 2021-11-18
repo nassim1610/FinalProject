@@ -17,14 +17,7 @@ public class TestRgistrationForOnlineAccess extends CommonAPI {
 
 }
 
-    @Test
-    public void tryLowIntro () throws InterruptedException {
-        GetHelp reg= PageFactory.initElements(driver, GetHelp.class);
-        reg.helpIcon();
-        reg.input1("open account");
 
-       Thread.sleep(3000);
-    }
 
     @Test
     public void test(){

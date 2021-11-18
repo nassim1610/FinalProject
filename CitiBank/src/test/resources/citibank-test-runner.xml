@@ -3,8 +3,8 @@
 
 <suite name="citibank Automation Scipt" parallel="false">
 
-<!--<parameter name="useCloudEnv" value="flase"/>-->
-<!--<parameter name="cloudEnvName" value="browserstack"/>-->
+<parameter name="useCloudEnv" value="flase"/>
+<parameter name="cloudEnvName" value="browserstack"/>
 <parameter name="os" value="Windows"/>
 <!--<parameter name="os_version" value="Sierra"/>-->
 <parameter name="browserName" value="chrome"/>
@@ -13,8 +13,9 @@
 <test name = "smoke testing CityBank search">
     <classes>
 
-        <class name="test.Testt"/>
-<!--        <class name="test.Testt"/>-->
+<!--        <class name="test.TestGetHelp"/>-->
+<!--        <class name="test.TestRgistrationForOnlineAccess"/>-->
+        <class name="test.TestSpecialOffer"></class>
     </classes>
 </test>
 

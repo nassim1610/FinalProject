@@ -117,7 +117,7 @@ public class DataReader {
 
     public static void main(String[] args) throws IOException {
         DataReader dr = new DataReader();
-        String [] list = dr.colReader("C:\\Users\\PIIT_NYA\\IdeaProjects\\web-automation-framework\\Amazon\\data\\items.xls",1);
+        String [] list = dr.colReader("C:\\Users\\nassi\\IdeaProjects\\FinalProject\\CitiBank\\data\\items.xls",1);
         for (String str: list) {
             System.out.println(str);
         }

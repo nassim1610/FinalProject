@@ -23,9 +23,7 @@ WebElement putkey;
         clickOn(getHowCanWeHelp());
         Thread.sleep(3000);
     }
-public void getkey(String str){
-        typeByXpath("getPutkey()", str);
-}
+
 
 
 }
