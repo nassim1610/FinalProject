@@ -8,11 +8,11 @@ import org.openqa.selenium.support.FindBy;
 public class SpecialOffer extends CommonAPI {
     @FindBy(xpath = "//*[contains(text(),'Special Offers')]")
     WebElement specialOffers;
-    @FindBy(xpath = "//*[@class='form-control ng-pristine ng-valid validation-input-danger ng-touched']")
+    @FindBy(xpath = "//input[@class='form-control ng-untouched ng-pristine ng-valid'][1]")
     WebElement putZipCode;
-    @FindBy(css = "#5342188c-1ac6-8779-00d8-701fceb1d643")
+    @FindBy(xpath = "//*[contains(text(),'Submit')][1]/../../citi-cta")
     WebElement submitZipCode;
-    @FindBy(xpath = "//*[@id='682adde1-5625-4226-8b51-374e7d82f494']")
+    @FindBy(xpath = "//*[@class='btn btn-primary medium'][1]")
     WebElement clickOnEarnUpTO1500;
 
 
@@ -25,8 +25,19 @@ public class SpecialOffer extends CommonAPI {
     public void scroll(WebDriver driver) throws InterruptedException {
         scrollToView(getSpecialOffers(), driver);
         clickOn(getSpecialOffers());
-        Thread.sleep(3000);
+        Thread.sleep(2000);
     }
+    public void giveZipCode(String value){
+        typeInto(getPutZipCode(),value);
+        clickOn(getSubmitZipCode());
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        clickOn(getClickOnEarnUpTO1500());
+    }
+
 
 
 

@@ -5,16 +5,16 @@
       <![CDATA[Extent Report DirectoryC:\Users\nassi\IdeaProjects\FinalProject\CitiBank\test-output\html]]>
     </line>
   </reporter-output>
-  <suite started-at="2021-11-18T00:41:43 EST" name="citibank Automation Scipt" finished-at="2021-11-18T00:42:05 EST" duration-ms="22252">
+  <suite started-at="2021-11-19T10:56:19 EST" name="citibank Automation Scipt" finished-at="2021-11-19T10:56:34 EST" duration-ms="15177">
     <groups>
     </groups>
-    <test started-at="2021-11-18T00:41:43 EST" name="smoke testing CityBank search" finished-at="2021-11-18T00:42:05 EST" duration-ms="22252">
-      <class name="test.TestSpecialOffer">
-        <test-method is-config="true" signature="extentSetup(org.testng.ITestContext)[pri:0, instance:test.TestSpecialOffer@10d68fcd]" started-at="2021-11-18T00:41:43 EST" name="extentSetup" finished-at="2021-11-18T00:41:43 EST" duration-ms="355" status="PASS">
+    <test started-at="2021-11-19T10:56:19 EST" name="smoke testing CityBank search" finished-at="2021-11-19T10:56:34 EST" duration-ms="15177">
+      <class name="test.TestGetHelp">
+        <test-method is-config="true" signature="extentSetup(org.testng.ITestContext)[pri:0, instance:test.TestGetHelp@610f7aa]" started-at="2021-11-19T10:56:18 EST" name="extentSetup" finished-at="2021-11-19T10:56:19 EST" duration-ms="312" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@7b4acdc2]]>
+                <![CDATA[org.testng.TestRunner@64412d34]]>
               </value>
             </param>
           </params>
@@ -24,7 +24,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- extentSetup -->
-        <test-method is-config="true" signature="setUp(boolean,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TestSpecialOffer@10d68fcd]" started-at="2021-11-18T00:41:43 EST" name="setUp" finished-at="2021-11-18T00:41:52 EST" duration-ms="9018" status="PASS">
+        <test-method is-config="true" signature="setUp(boolean,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TestGetHelp@610f7aa]" started-at="2021-11-19T10:56:19 EST" name="setUp" finished-at="2021-11-19T10:56:25 EST" duration-ms="6344" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -65,22 +65,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:test.TestSpecialOffer@10d68fcd]" started-at="2021-11-18T00:41:52 EST" name="startExtent" finished-at="2021-11-18T00:41:52 EST" duration-ms="12" status="PASS">
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:test.TestGetHelp@610f7aa]" started-at="2021-11-19T10:56:25 EST" name="startExtent" finished-at="2021-11-19T10:56:25 EST" duration-ms="8" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void test.TestSpecialOffer.offers() throws java.lang.InterruptedException]]>
+                <![CDATA[public void test.TestGetHelp.getInfo() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startExtent -->
-        <test-method signature="offers()[pri:0, instance:test.TestSpecialOffer@10d68fcd]" started-at="2021-11-18T00:41:52 EST" name="offers" finished-at="2021-11-18T00:42:05 EST" duration-ms="13179" status="PASS">
+        <test-method signature="getInfo()[pri:0, instance:test.TestGetHelp@610f7aa]" started-at="2021-11-19T10:56:25 EST" name="getInfo" finished-at="2021-11-19T10:56:34 EST" duration-ms="8791" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- offers -->
-      </class> <!-- test.TestSpecialOffer -->
+        </test-method> <!-- getInfo -->
+      </class> <!-- test.TestGetHelp -->
     </test> <!-- smoke testing CityBank search -->
   </suite> <!-- citibank Automation Scipt -->
 </testng-results>

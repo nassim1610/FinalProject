@@ -13,9 +13,9 @@
 <test name = "smoke testing CityBank search">
     <classes>
 
-<!--        <class name="test.TestGetHelp"/>-->
-<!--        <class name="test.TestRgistrationForOnlineAccess"/>-->
-        <class name="test.TestSpecialOffer"></class>
+        <class name="test.TestGetHelp"/>
+<!--        <class name="test.TestCreditCards"/>-->
+<!--        <class name="test.TestSpecialOffer"></class>-->
     </classes>
 </test>
 

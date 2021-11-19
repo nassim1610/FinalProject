@@ -11,10 +11,10 @@ public class TestGetHelp extends CommonAPI {
         GetHelp help= PageFactory.initElements(driver, GetHelp.class);
         help.helpIcon();
         help.input1("open account");
-        //help.additionPage();
+        help.additionPage();
         //help.clickOnHowToReopenAccount();
        // help.scrolAndClickOnApplyForCitiAccount(driver);
-       help.clickOnApplyForCitiBAccount();
+       //help.clickOnApplyForCitiBAccount();
 
 
     }

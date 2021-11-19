@@ -11,11 +11,8 @@
       <class name="test.TestSpecialOffer">
         <methods>
           <include name="setUp"/>
-          <include name="afterMethod"/>
-          <include name="afterEachTestMethod"/>
           <include name="offers"/>
           <include name="extentSetup"/>
-          <include name="generateReport"/>
           <include name="startExtent"/>
         </methods>
       </class> <!-- test.TestSpecialOffer -->
