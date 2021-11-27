@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="1" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="test.TestHomePage">
+        <methods>
+          <include name="startExtent"/>
+          <include name="test19"/>
+          <include name="test18"/>
+          <include name="test1"/>
+          <include name="test13"/>
+          <include name="afterMethod"/>
+          <include name="test17"/>
+          <include name="test11"/>
+          <include name="test10"/>
+          <include name="test12"/>
+          <include name="test15"/>
+          <include name="generateReport"/>
+          <include name="test14"/>
+          <include name="test16"/>
+          <include name="setUp"/>
+          <include name="afterEachTestMethod"/>
+          <include name="test6"/>
+          <include name="test7"/>
+          <include name="test8"/>
+          <include name="extentSetup"/>
+          <include name="test9"/>
+          <include name="test2"/>
+          <include name="test3"/>
+          <include name="test4"/>
+          <include name="test5"/>
+          <include name="test20"/>
+        </methods>
+      </class> <!-- test.TestHomePage -->
+      <class name="test.TestOpenAccount">
+        <methods>
+          <include name="newAccount"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="afterEachTestMethod"/>
+          <include name="extentSetup"/>
+          <include name="generateReport"/>
+          <include name="startExtent"/>
+        </methods>
+      </class> <!-- test.TestOpenAccount -->
+      <class name="test.TestSpecialOffer">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="afterEachTestMethod"/>
+          <include name="offers"/>
+          <include name="extentSetup"/>
+          <include name="generateReport"/>
+          <include name="startExtent"/>
+        </methods>
+      </class> <!-- test.TestSpecialOffer -->
+      <class name="test.TestGetHelp">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="getInfo"/>
+          <include name="afterEachTestMethod"/>
+          <include name="extentSetup"/>
+          <include name="generateReport"/>
+          <include name="startExtent"/>
+        </methods>
+      </class> <!-- test.TestGetHelp -->
+      <class name="test.TestSingon">
+        <methods>
+          <include name="signOninfo"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="mobileSign"/>
+          <include name="afterEachTestMethod"/>
+          <include name="ActivatTheCard"/>
+          <include name="recoverAccount"/>
+          <include name="extentSetup"/>
+          <include name="generateReport"/>
+          <include name="startExtent"/>
+        </methods>
+      </class> <!-- test.TestSingon -->
+      <class name="test.TestRespondToMailOffer">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="respond"/>
+          <include name="afterEachTestMethod"/>
+          <include name="extentSetup"/>
+          <include name="generateReport"/>
+          <include name="startExtent"/>
+        </methods>
+      </class> <!-- test.TestRespondToMailOffer -->
+      <class name="test.TestQuickLink">
+        <methods>
+          <include name="knowleg"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="afterEachTestMethod"/>
+          <include name="extentSetup"/>
+          <include name="generateReport"/>
+          <include name="startExtent"/>
+        </methods>
+      </class> <!-- test.TestQuickLink -->
+      <class name="test.TestAAdvantageExecutiveWorldElite">
+        <methods>
+          <include name="TestCitiRewardsCreditCard"/>
+          <include name="TestCostcoVisaCreditCard"/>
+          <include name="setUp"/>
+          <include name="TestDoubleCashCreditCard"/>
+          <include name="afterEachTestMethod"/>
+          <include name="extentSetup"/>
+          <include name="test"/>
+          <include name="startExtent"/>
+          <include name="TestCustomerCash"/>
+          <include name="afterMethod"/>
+          <include name="TestDiamondCreditCard"/>
+          <include name="TestCostcoBusinessCreditCard"/>
+          <include name="generateReport"/>
+        </methods>
+      </class> <!-- test.TestAAdvantageExecutiveWorldElite -->
+      <class name="test.TestCreditCards">
+        <methods>
+          <include name="setUp"/>
+          <include name="TestCustomerCash"/>
+          <include name="afterEachTestMethod"/>
+          <include name="extentSetup"/>
+          <include name="TestCostcoBusinessCreditCard"/>
+          <include name="TestVisaCreditCard"/>
+          <include name="startExtent"/>
+          <include name="TestCitiRewardsCreditCard"/>
+          <include name="afterMethod"/>
+          <include name="TestDoubleCashCreditCard"/>
+          <include name="TestD_Card"/>
+          <include name="test"/>
+          <include name="generateReport"/>
+        </methods>
+      </class> <!-- test.TestCreditCards -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

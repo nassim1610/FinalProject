@@ -12,10 +12,6 @@ public class TestGetHelp extends CommonAPI {
         help.helpIcon();
         help.input1("open account");
         help.additionPage();
-        //help.clickOnHowToReopenAccount();
-       // help.scrolAndClickOnApplyForCitiAccount(driver);
-       //help.clickOnApplyForCitiBAccount();
-
 
     }
 

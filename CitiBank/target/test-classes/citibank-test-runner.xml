@@ -3,19 +3,25 @@
 
 <suite name="citibank Automation Scipt" parallel="false">
 
-<parameter name="useCloudEnv" value="flase"/>
+<parameter name="useCloudEnv" value="true"/>
 <parameter name="cloudEnvName" value="browserstack"/>
 <parameter name="os" value="Windows"/>
-<!--<parameter name="os_version" value="Sierra"/>-->
+<parameter name="os_version" value="Sierra"/>
 <parameter name="browserName" value="chrome"/>
-<!--<parameter name="browserVersion" value="65.0"/>-->
+<parameter name="browserVersion" value="95.0"/>
 <parameter name="url" value="https://www.citi.com"/>
 <test name = "smoke testing CityBank search">
     <classes>
 
-        <class name="test.TestGetHelp"/>
+<!--        <class name="test.TestAAdvantageExecutiveWorldElite"/>-->
 <!--        <class name="test.TestCreditCards"/>-->
-<!--        <class name="test.TestSpecialOffer"></class>-->
+<!--        <class name="test.TestGetHelp"/>-->
+<!--        <class name="test.TestHomePage"/>-->
+<!--        <class name="test.TestOpenAccount"/>-->
+<!--        <class name="test.TestQuickLink"/>-->
+<!--        <class name="test.TestRespondToMailOffer"/>-->
+<!--        <class name="test.TestSingon"/>-->
+        <class name="test.TestSpecialOffer"/>
     </classes>
 </test>
 

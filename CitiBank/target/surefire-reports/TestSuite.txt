@@ -1,0 +1,31 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 215, Failures: 9, Errors: 0, Skipped: 206, Time elapsed: 1.507 s <<< FAILURE! - in TestSuite
+setUp(test.TestAAdvantageExecutiveWorldElite)  Time elapsed: 0.822 s  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\nassi\IdeaProjects\FinalProject\CitiBank\..\Generic\drivers\chromedriver
+
+setUp(test.TestCreditCards)  Time elapsed: 0.006 s  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\nassi\IdeaProjects\FinalProject\CitiBank\..\Generic\drivers\chromedriver
+
+setUp(test.TestGetHelp)  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\nassi\IdeaProjects\FinalProject\CitiBank\..\Generic\drivers\chromedriver
+
+setUp(test.TestHomePage)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\nassi\IdeaProjects\FinalProject\CitiBank\..\Generic\drivers\chromedriver
+
+setUp(test.TestOpenAccount)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\nassi\IdeaProjects\FinalProject\CitiBank\..\Generic\drivers\chromedriver
+
+setUp(test.TestQuickLink)  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\nassi\IdeaProjects\FinalProject\CitiBank\..\Generic\drivers\chromedriver
+
+setUp(test.TestRespondToMailOffer)  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\nassi\IdeaProjects\FinalProject\CitiBank\..\Generic\drivers\chromedriver
+
+setUp(test.TestSingon)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\nassi\IdeaProjects\FinalProject\CitiBank\..\Generic\drivers\chromedriver
+
+setUp(test.TestSpecialOffer)  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\nassi\IdeaProjects\FinalProject\CitiBank\..\Generic\drivers\chromedriver
+

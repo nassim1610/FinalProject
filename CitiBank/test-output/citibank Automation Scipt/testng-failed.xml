@@ -1,21 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [citibank Automation Scipt]" guice-stage="DEVELOPMENT">
-  <parameter name="useCloudEnv" value="flase"/>
+  <parameter name="useCloudEnv" value="true"/>
   <parameter name="os" value="Windows"/>
+  <parameter name="os_version" value="Sierra"/>
+  <parameter name="browserVersion" value="95.0"/>
   <parameter name="browserName" value="chrome"/>
   <parameter name="cloudEnvName" value="browserstack"/>
   <parameter name="url" value="https://www.citi.com"/>
   <test thread-count="5" name="smoke testing CityBank search(failed)">
     <classes>
-      <class name="test.TestSpecialOffer">
+      <class name="test.TestCreditCards">
         <methods>
           <include name="setUp"/>
-          <include name="offers"/>
+          <include name="afterMethod"/>
+          <include name="TestDoubleCashCreditCard"/>
+          <include name="afterEachTestMethod"/>
           <include name="extentSetup"/>
+          <include name="generateReport"/>
           <include name="startExtent"/>
         </methods>
-      </class> <!-- test.TestSpecialOffer -->
+      </class> <!-- test.TestCreditCards -->
+      <class name="test.TestAAdvantageExecutiveWorldElite">
+        <methods>
+          <include name="TestCitiRewardsCreditCard"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="afterEachTestMethod"/>
+          <include name="extentSetup"/>
+          <include name="generateReport"/>
+          <include name="startExtent"/>
+        </methods>
+      </class> <!-- test.TestAAdvantageExecutiveWorldElite -->
     </classes>
   </test> <!-- smoke testing CityBank search(failed) -->
 </suite> <!-- Failed suite [citibank Automation Scipt] -->

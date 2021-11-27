@@ -35,8 +35,8 @@ import java.util.concurrent.TimeUnit;
 
 public class CommonAPI {
     public WebDriver driver = null;
-    public String browserstack_username = "nacerhadjsaid1";        //this browserstack and saucelabs they are two different online environment
-    public String browserstack_accesskey = "pK4miZ8sp15afqsvGckE";// an,d thos String we call them capabilities
+    public String browserstack_username = "nassimamiri_u8H65x";        //this browserstack and saucelabs they are two different online environment
+    public String browserstack_accesskey = "1rsa8C561ypiHN4Ly2RF";// an,d thos String we call them capabilities
     public String saucelabs_username = "";
     public String saucelabs_accesskey = "";
     boolean flag = false;
@@ -64,7 +64,7 @@ public class CommonAPI {
         return sw.toString();
     }
 
-    //@AfterMethod
+    @AfterMethod
     public void afterEachTestMethod(ITestResult result) {
         ExtentTestManager.getTest().getTest().setStartedTime(getTime(result.getStartMillis()));
         ExtentTestManager.getTest().getTest().setEndedTime(getTime(result.getEndMillis()));
@@ -87,7 +87,7 @@ public class CommonAPI {
         }
         driver.quit();
     }
-   // @AfterSuite
+    @AfterSuite
     public void generateReport() {
         extent.close();
     }
@@ -153,7 +153,7 @@ public class CommonAPI {
         }
         return driver;
     }
-   // @AfterMethod
+    @AfterMethod
     public void afterMethod () {
         driver.quit();
     }
@@ -192,6 +192,8 @@ public class CommonAPI {
     public void typeInto(WebElement element, String value){
         element.sendKeys(value);
     }
+
+
     public void typeEnter(WebElement element, String str){
         element.sendKeys(str, Keys.ENTER);
     }
@@ -211,6 +213,36 @@ public class CommonAPI {
             e.printStackTrace();
         }
     }
+
+
+
+
+    public String oldTab(){String oldtab = driver.getWindowHandle();
+    return oldtab;}
+    public void handelTabe(WebDriver driver,WebElement oldTab,int index){
+        ArrayList<String> newTab = new ArrayList<String>(driver.getWindowHandles());
+        newTab.remove(oldTab);
+        driver.switchTo().window(newTab.get(index));
+    }
+    public static WebDriver handleNewTab(WebDriver driver1){
+        String oldTab = driver1.getWindowHandle();
+        List<String> newTabs = new ArrayList<String>(driver1.getWindowHandles());
+        newTabs.remove(oldTab);
+        driver1.switchTo().window(newTabs.get(0));
+        return driver1;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
     public void clearTextField(WebElement element){
         element.clear();
     }
@@ -293,18 +325,19 @@ public class CommonAPI {
         }
         return flag;
     }
+
     public boolean checkNotDisplayed(WebElement element){
         if (!element.isDisplayed()){
             flag = true;
         }
         return flag;
     }
-    public static WebDriver handleNewTab(WebDriver driver1){
-        String oldTab = driver1.getWindowHandle();
-        List<String> newTabs = new ArrayList<String>(driver1.getWindowHandles());
-        newTabs.remove(oldTab);
-        driver1.switchTo().window(newTabs.get(0));
-        return driver1;
+
+    public void selectdropdown(String locator, int index){
+        WebElement dropdown= driver.findElement(By.xpath(locator));
+        Select select= new Select(dropdown);//this Select have to be from selenium
+        select.selectByIndex(index);
+
     }
     public void waitUntilClickAble(WebElement element){
         WebDriverWait wait = new WebDriverWait(driver, 10);

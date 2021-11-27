@@ -29,14 +29,8 @@ public class SpecialOffer extends CommonAPI {
     }
     public void giveZipCode(String value){
         typeInto(getPutZipCode(),value);
-        clickOn(getSubmitZipCode());
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        clickOn(getClickOnEarnUpTO1500());
-    }
+        clickOn(getSubmitZipCode());try {Thread.sleep(2000); } catch (InterruptedException e) {  e.printStackTrace();  }
+        clickOn(getClickOnEarnUpTO1500());}
 
 
 

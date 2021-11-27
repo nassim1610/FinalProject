@@ -11,7 +11,7 @@ public class TestSpecialOffer extends CommonAPI {
     public void offers() throws InterruptedException {
         SpecialOffer Soffer = PageFactory.initElements(driver, SpecialOffer.class);
         Soffer.scroll(driver);
-        Soffer.giveZipCode("11367");
+        //Soffer.giveZipCode("11367");
 
     }
 
